@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4BA5549-41B6-47D2-94EB-73187F9A9262}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyNhanSu</RootNamespace>
+    <AssemblyName>QuanLyNhanSu</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>473778_business_hierarchy_leadership_management_organization_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Category\frmPoliticalLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmPoliticalLevel.Designer.cs">
+      <DependentUpon>frmPoliticalLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmPoliticalLevelDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmPoliticalLevelDetail.Designer.cs">
+      <DependentUpon>frmPoliticalLevelDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmDepartmentDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmDepartmentDetail.Designer.cs">
+      <DependentUpon>frmDepartmentDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmAcademicLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmAcademicLevel.Designer.cs">
+      <DependentUpon>frmAcademicLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmAcademicLevelDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmAcademicLevelDetail.Designer.cs">
+      <DependentUpon>frmAcademicLevelDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmPosition.Designer.cs">
+      <DependentUpon>frmPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmResponsible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmResponsible.Designer.cs">
+      <DependentUpon>frmResponsible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmSchool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmSchool.Designer.cs">
+      <DependentUpon>frmSchool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmPositionDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmPositionDetail.Designer.cs">
+      <DependentUpon>frmPositionDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmResponsibleDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmResponsibleDetail.Designer.cs">
+      <DependentUpon>frmResponsibleDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmSchoolDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmSchoolDetail.Designer.cs">
+      <DependentUpon>frmSchoolDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmLevelDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmLevelDetail.Designer.cs">
+      <DependentUpon>frmLevelDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmUnitDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmUnitDetail.Designer.cs">
+      <DependentUpon>frmUnitDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmLevel.Designer.cs">
+      <DependentUpon>frmLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmDepartment.Designer.cs">
+      <DependentUpon>frmDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmUnits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmUnits.Designer.cs">
+      <DependentUpon>frmUnits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common.cs" />
+    <Compile Include="Entity\Person.cs" />
+    <Compile Include="Entity\PoliticalLevel.cs" />
+    <Compile Include="Entity\Department.cs" />
+    <Compile Include="Entity\AcademicLevel.cs" />
+    <Compile Include="Entity\Level.cs" />
+    <Compile Include="Entity\Position.cs" />
+    <Compile Include="Entity\Responsible.cs" />
+    <Compile Include="Entity\School.cs" />
+    <Compile Include="Entity\Unit.cs" />
+    <Compile Include="Managerment\frmPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Managerment\frmPerson.Designer.cs">
+      <DependentUpon>frmPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Managerment\frmPersonDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Managerment\frmPersonDetail.Designer.cs">
+      <DependentUpon>frmPersonDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\frmCreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\frmCreateAccount.Designer.cs">
+      <DependentUpon>frmCreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Category\frmPoliticalLevel.resx">
+      <DependentUpon>frmPoliticalLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmPoliticalLevelDetail.resx">
+      <DependentUpon>frmPoliticalLevelDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmDepartmentDetail.resx">
+      <DependentUpon>frmDepartmentDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmAcademicLevel.resx">
+      <DependentUpon>frmAcademicLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmAcademicLevelDetail.resx">
+      <DependentUpon>frmAcademicLevelDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmPosition.resx">
+      <DependentUpon>frmPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmResponsible.resx">
+      <DependentUpon>frmResponsible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmSchool.resx">
+      <DependentUpon>frmSchool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmPositionDetail.resx">
+      <DependentUpon>frmPositionDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmResponsibleDetail.resx">
+      <DependentUpon>frmResponsibleDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmSchoolDetail.resx">
+      <DependentUpon>frmSchoolDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmLevelDetail.resx">
+      <DependentUpon>frmLevelDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmUnitDetail.resx">
+      <DependentUpon>frmUnitDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmLevel.resx">
+      <DependentUpon>frmLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmDepartment.resx">
+      <DependentUpon>frmDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmUnits.resx">
+      <DependentUpon>frmUnits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managerment\frmPerson.resx">
+      <DependentUpon>frmPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managerment\frmPersonDetail.resx">
+      <DependentUpon>frmPersonDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\frmCreateAccount.resx">
+      <DependentUpon>frmCreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Report\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="473778_business_hierarchy_leadership_management_organization_icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

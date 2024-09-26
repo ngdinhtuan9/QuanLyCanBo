@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4BA5549-41B6-47D2-94EB-73187F9A9262}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyTrinhDo</RootNamespace>
+    <AssemblyName>QuanLyTrinhDo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>6-21-2024-5-05-48-PM.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>QuanLyNhanSu.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GemBox.Spreadsheet">
+      <HintPath>Dll\GemBox.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>Dll\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Category\frmCompetition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmCompetition.Designer.cs">
+      <DependentUpon>frmCompetition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmClassify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmClassify.Designer.cs">
+      <DependentUpon>frmClassify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmCompetitionDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmCompetitionDetail.Designer.cs">
+      <DependentUpon>frmCompetitionDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmClassifyDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmClassifyDetail.Designer.cs">
+      <DependentUpon>frmClassifyDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmTittleDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmTittleDetail.Designer.cs">
+      <DependentUpon>frmTittleDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmTittle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmTittle.Designer.cs">
+      <DependentUpon>frmTittle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmFosteringQPANDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmFosteringQPANDetail.Designer.cs">
+      <DependentUpon>frmFosteringQPANDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmFosteringQPAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmFosteringQPAN.Designer.cs">
+      <DependentUpon>frmFosteringQPAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmFostering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmFostering.Designer.cs">
+      <DependentUpon>frmFostering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmFosteringDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmFosteringDetail.Designer.cs">
+      <DependentUpon>frmFosteringDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmPoliticalLevelFormDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmPoliticalLevelFormDetail.Designer.cs">
+      <DependentUpon>frmPoliticalLevelFormDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmPoliticalLevelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmPoliticalLevelForm.Designer.cs">
+      <DependentUpon>frmPoliticalLevelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmPoliticalLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmPoliticalLevel.Designer.cs">
+      <DependentUpon>frmPoliticalLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmPoliticalLevelDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmPoliticalLevelDetail.Designer.cs">
+      <DependentUpon>frmPoliticalLevelDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmDepartmentDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmDepartmentDetail.Designer.cs">
+      <DependentUpon>frmDepartmentDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmAcademicLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmAcademicLevel.Designer.cs">
+      <DependentUpon>frmAcademicLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmAcademicLevelDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmAcademicLevelDetail.Designer.cs">
+      <DependentUpon>frmAcademicLevelDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmPosition.Designer.cs">
+      <DependentUpon>frmPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmResponsible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmResponsible.Designer.cs">
+      <DependentUpon>frmResponsible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmSchool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmSchool.Designer.cs">
+      <DependentUpon>frmSchool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmPositionDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmPositionDetail.Designer.cs">
+      <DependentUpon>frmPositionDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmResponsibleDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmResponsibleDetail.Designer.cs">
+      <DependentUpon>frmResponsibleDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmTraningFosteringType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmTraningFosteringType.Designer.cs">
+      <DependentUpon>frmTraningFosteringType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmTraningFosteringTypeDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmTraningFosteringTypeDetail.Designer.cs">
+      <DependentUpon>frmTraningFosteringTypeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmTraningProcessType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmTraningProcessType.Designer.cs">
+      <DependentUpon>frmTraningProcessType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmTraningProcessTypeDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmTraningProcessTypeDetail.Designer.cs">
+      <DependentUpon>frmTraningProcessTypeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Competition.cs" />
+    <Compile Include="Entity\Tittle.cs" />
+    <Compile Include="Entity\Classify.cs" />
+    <Compile Include="Entity\FosteringQPAN.cs" />
+    <Compile Include="Entity\Fostering.cs" />
+    <Compile Include="Entity\PoliticalLevelForm.cs" />
+    <Compile Include="Entity\TraningFosteringType.cs" />
+    <Compile Include="Entity\TraningProcessType.cs" />
+    <Compile Include="Entity\User.cs" />
+    <Compile Include="Main\frmMainNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\frmMainNew.Designer.cs">
+      <DependentUpon>frmMainNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Managerment\frmFosteringProcessDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Managerment\frmFosteringProcessDetails.Designer.cs">
+      <DependentUpon>frmFosteringProcessDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Managerment\frmPersonDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Managerment\frmPersonDetail.Designer.cs">
+      <DependentUpon>frmPersonDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Managerment\frmTraningProcessDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Managerment\frmTraningProcessDetails.Designer.cs">
+      <DependentUpon>frmTraningProcessDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmSchoolDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmSchoolDetail.Designer.cs">
+      <DependentUpon>frmSchoolDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmLevelDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmLevelDetail.Designer.cs">
+      <DependentUpon>frmLevelDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmUnitDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmUnitDetail.Designer.cs">
+      <DependentUpon>frmUnitDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmLevel.Designer.cs">
+      <DependentUpon>frmLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmDepartment.Designer.cs">
+      <DependentUpon>frmDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\frmUnits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\frmUnits.Designer.cs">
+      <DependentUpon>frmUnits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\FosteringProcess.cs" />
+    <Compile Include="Entity\TranningProcess.cs" />
+    <Compile Include="Entity\Person.cs" />
+    <Compile Include="Entity\PoliticalLevel.cs" />
+    <Compile Include="Entity\Department.cs" />
+    <Compile Include="Entity\AcademicLevel.cs" />
+    <Compile Include="Entity\Level.cs" />
+    <Compile Include="Entity\Position.cs" />
+    <Compile Include="Entity\Responsible.cs" />
+    <Compile Include="Entity\School.cs" />
+    <Compile Include="Entity\Unit.cs" />
+    <Compile Include="Managerment\frmPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Managerment\frmPerson.Designer.cs">
+      <DependentUpon>frmPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLNSCommon.cs" />
+    <Compile Include="Report\frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\frmAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\frmAccount.Designer.cs">
+      <DependentUpon>frmAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\frmCreatetoken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\frmCreatetoken.Designer.cs">
+      <DependentUpon>frmCreatetoken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\frmIntroducing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\frmIntroducing.Designer.cs">
+      <DependentUpon>frmIntroducing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\frmForgotPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\frmForgotPass.Designer.cs">
+      <DependentUpon>frmForgotPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\frmRestoreData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\frmRestoreData.Designer.cs">
+      <DependentUpon>frmRestoreData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\frmChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\frmChangePass.Designer.cs">
+      <DependentUpon>frmChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\frmBackupData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\frmBackupData.Designer.cs">
+      <DependentUpon>frmBackupData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\frmCreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\frmCreateAccount.Designer.cs">
+      <DependentUpon>frmCreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Category\frmCompetition.resx">
+      <DependentUpon>frmCompetition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmClassify.resx">
+      <DependentUpon>frmClassify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmCompetitionDetail.resx">
+      <DependentUpon>frmCompetitionDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmClassifyDetail.resx">
+      <DependentUpon>frmClassifyDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmTittleDetail.resx">
+      <DependentUpon>frmTittleDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmTittle.resx">
+      <DependentUpon>frmTittle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmFosteringQPANDetail.resx">
+      <DependentUpon>frmFosteringQPANDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmFosteringQPAN.resx">
+      <DependentUpon>frmFosteringQPAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmFostering.resx">
+      <DependentUpon>frmFostering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmFosteringDetail.resx">
+      <DependentUpon>frmFosteringDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmPoliticalLevelFormDetail.resx">
+      <DependentUpon>frmPoliticalLevelFormDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmPoliticalLevelForm.resx">
+      <DependentUpon>frmPoliticalLevelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmPoliticalLevel.resx">
+      <DependentUpon>frmPoliticalLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmPoliticalLevelDetail.resx">
+      <DependentUpon>frmPoliticalLevelDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmDepartmentDetail.resx">
+      <DependentUpon>frmDepartmentDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmAcademicLevel.resx">
+      <DependentUpon>frmAcademicLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmAcademicLevelDetail.resx">
+      <DependentUpon>frmAcademicLevelDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmPosition.resx">
+      <DependentUpon>frmPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmResponsible.resx">
+      <DependentUpon>frmResponsible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmSchool.resx">
+      <DependentUpon>frmSchool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmPositionDetail.resx">
+      <DependentUpon>frmPositionDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmResponsibleDetail.resx">
+      <DependentUpon>frmResponsibleDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmTraningFosteringType.resx">
+      <DependentUpon>frmTraningFosteringType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmTraningFosteringTypeDetail.resx">
+      <DependentUpon>frmTraningFosteringTypeDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmTraningProcessType.resx">
+      <DependentUpon>frmTraningProcessType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmTraningProcessTypeDetail.resx">
+      <DependentUpon>frmTraningProcessTypeDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frmMainNew.resx">
+      <DependentUpon>frmMainNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managerment\frmFosteringProcessDetails.resx">
+      <DependentUpon>frmFosteringProcessDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managerment\frmPersonDetail.resx">
+      <DependentUpon>frmPersonDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managerment\frmTraningProcessDetails.resx">
+      <DependentUpon>frmTraningProcessDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmSchoolDetail.resx">
+      <DependentUpon>frmSchoolDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmLevelDetail.resx">
+      <DependentUpon>frmLevelDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmUnitDetail.resx">
+      <DependentUpon>frmUnitDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmLevel.resx">
+      <DependentUpon>frmLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmDepartment.resx">
+      <DependentUpon>frmDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\frmUnits.resx">
+      <DependentUpon>frmUnits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managerment\frmPerson.resx">
+      <DependentUpon>frmPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\frmAccount.resx">
+      <DependentUpon>frmAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\frmCreatetoken.resx">
+      <DependentUpon>frmCreatetoken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\frmIntroducing.resx">
+      <DependentUpon>frmIntroducing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\frmForgotPass.resx">
+      <DependentUpon>frmForgotPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\frmRestoreData.resx">
+      <DependentUpon>frmRestoreData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\frmChangePass.resx">
+      <DependentUpon>frmChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\frmBackupData.resx">
+      <DependentUpon>frmBackupData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\frmCreateAccount.resx">
+      <DependentUpon>frmCreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="6-21-2024-5-05-48-PM.ico" />
+    <Content Include="Config.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

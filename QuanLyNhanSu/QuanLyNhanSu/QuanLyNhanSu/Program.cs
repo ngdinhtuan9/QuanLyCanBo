@@ -1,0 +1,32 @@
+﻿using QuanLyNhanSu.Category;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Forms;
+
+namespace QuanLyNhanSu
+{
+    internal static class Program
+    {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new Main.frmMain());
+            // Application.Run(new Login());
+            //Application.Run(new frmCreateAccount());
+            //Application.Run(new frmUnits());
+            // Application.Run(new frmLevel());
+            //Application.Run(new frmDepartment());
+            //Application.Run(new frmAcademicLevel());
+            //Application.Run(new frmSchool());
+            // Application.Run(new frmPosition());
+            //Application.Run(new frmResponsible());
+            Application.Run(new frmPoliticalLevel());
+        }
+    }
+}

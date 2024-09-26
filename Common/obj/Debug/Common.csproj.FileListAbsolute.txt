@@ -1,0 +1,32 @@
+C:\Users\Administrator\Desktop\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\Common\bin\Debug\Common.dll
+C:\Users\Administrator\Desktop\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\Common\bin\Debug\Common.pdb
+C:\Users\Administrator\Desktop\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\Common\bin\Debug\GemBox.Spreadsheet.dll
+C:\Users\Administrator\Desktop\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\Common\obj\Debug\Common.csproj.CopyComplete
+C:\Users\Administrator\Desktop\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\Common\obj\Debug\Common.dll
+C:\Users\Administrator\Desktop\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\Common\obj\Debug\Common.pdb
+C:\Users\Administrator\Desktop\QuanLyNhanSu (1)\QuanLyNhanSu\Common\bin\Debug\Common.dll
+C:\Users\Administrator\Desktop\QuanLyNhanSu (1)\QuanLyNhanSu\Common\bin\Debug\Common.pdb
+C:\Users\Administrator\Desktop\QuanLyNhanSu (1)\QuanLyNhanSu\Common\bin\Debug\GemBox.Spreadsheet.dll
+C:\Users\Administrator\Desktop\QuanLyNhanSu (1)\QuanLyNhanSu\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\QuanLyNhanSu (1)\QuanLyNhanSu\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\QuanLyNhanSu (1)\QuanLyNhanSu\Common\obj\Debug\Common.csproj.CopyComplete
+C:\Users\Administrator\Desktop\QuanLyNhanSu (1)\QuanLyNhanSu\Common\obj\Debug\Common.dll
+C:\Users\Administrator\Desktop\QuanLyNhanSu (1)\QuanLyNhanSu\Common\obj\Debug\Common.pdb
+C:\Users\Administrator\Desktop\QuanLyNhanSu\Common\bin\Debug\Common.dll
+C:\Users\Administrator\Desktop\QuanLyNhanSu\Common\bin\Debug\Common.pdb
+C:\Users\Administrator\Desktop\QuanLyNhanSu\Common\bin\Debug\GemBox.Spreadsheet.dll
+C:\Users\Administrator\Desktop\QuanLyNhanSu\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\QuanLyNhanSu\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\QuanLyNhanSu\Common\obj\Debug\Common.csproj.CopyComplete
+C:\Users\Administrator\Desktop\QuanLyNhanSu\Common\obj\Debug\Common.dll
+C:\Users\Administrator\Desktop\QuanLyNhanSu\Common\obj\Debug\Common.pdb
+C:\Users\Administrator\Desktop\QuanLyNhanSu\QuanLyNhanSu\Common\bin\Debug\Common.dll
+C:\Users\Administrator\Desktop\QuanLyNhanSu\QuanLyNhanSu\Common\bin\Debug\Common.pdb
+C:\Users\Administrator\Desktop\QuanLyNhanSu\QuanLyNhanSu\Common\bin\Debug\GemBox.Spreadsheet.dll
+C:\Users\Administrator\Desktop\QuanLyNhanSu\QuanLyNhanSu\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\QuanLyNhanSu\QuanLyNhanSu\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\QuanLyNhanSu\QuanLyNhanSu\Common\obj\Debug\Common.csproj.CopyComplete
+C:\Users\Administrator\Desktop\QuanLyNhanSu\QuanLyNhanSu\Common\obj\Debug\Common.dll
+C:\Users\Administrator\Desktop\QuanLyNhanSu\QuanLyNhanSu\Common\obj\Debug\Common.pdb
